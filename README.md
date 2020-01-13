@@ -16,14 +16,21 @@ Users who sign up for our service can browse and watch a variety of videos from 
 To keep our users interested, dynamic movie segments have been built into our pages with AWS. Longer, selectable, videos have been embedded to save on overall project costs. Start watching with one click!
 
 
-## Functionality and MVP
+## Technologies and Libraries Used
 
-1. User authorization - New users can sign up, and existing users can log in
-2. Display Videos - Dynamic movie viewer and video storage; using both AWS and embedded videos
-3. Genres - Displays categories on the main page by database categorization
-4. Search - Search by movie name; agnostic of capitalization or special characters
-5. MyList - Ability to save your favorite movies to a list for later reference (you can also delete them from the list!)
-6. Deployment to Heroku
+* Node JS
+* Express
+* MongoDB
+* HTML
+* CSS
+* React JS
+* Redux
+* Mongoose
+* BCrypt, JSONWebToken, Passport for user authentication
+* Validator
+* Bodyparser middleware
+
+---
 
 ## Tricky Issues and Solutions
 
@@ -120,46 +127,3 @@ To achieve this, we added an event listener to all the left and right buttons of
 Here, we used the `findDOMNode` function from the `react-dom` library. Each genre list element was given a ref as their section number (or `elementId` above). These two functions are responsible for finding the specific genre list and incrementing or decrementing its scroll position. 
 
 
-## Technologies and Technical Challenges
-
-* Node JS
-* Express
-* MongoDB
-* HTML
-* CSS
-
-## Libraries
-
-* React JS
-* Redux
-* Mongoose
-* BCrypt, JSONWebToken, Passport for user authentication
-* Validator
-* Bodyparser middleware
-
-
-## Group Members and Work Breakdown
-Mitchell Reiss, Alex Lee, Jacob Schneider
-### Day 1
-* Create Database, setup file tree, backend user auth - Mitchell
-* Build frontend components for Login, signup, logout - Jacob
-* AWS Setup - Alex
-
-### Day 2
-* Style navbar - Mitchell
-* Style user auth and splash page - Jacob
-* Add movie index and show page - Alex
-
-### Day 3
- * Create My List feature backend - Mitchell
- * Style movie index and show page - Alex
- * Seed movies - Alex, Jacob, Mitchell
- 
-### Day 4
- * Add styling and display movies to index page - Alex
- * Style My List feature - Mitchell
- * Search by movie - Jacob
- 
-### Day 5
-* Finish styling - Alex, Mitchell, Jacob
-* Deployment to Heroku - Jacob
